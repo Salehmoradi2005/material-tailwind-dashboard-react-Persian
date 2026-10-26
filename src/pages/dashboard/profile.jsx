@@ -101,14 +101,15 @@ export function Profile() {
               </div>
             </div>
             <ProfileInfoCard
-              title="Profile Information"
-              description="Hi, I'm Alec Thompson, Decisions: If you can't decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
+              
+              title="اطلاعات پروفایل"
+              description="سلام، من الک تامپسون هستم. تصمیم‌گیری: اگر نمی‌توانید تصمیم بگیرید، پاسخ منفی است. اگر دو مسیر به یک اندازه دشوار هستند، مسیری را انتخاب کنید که در کوتاه‌مدت دردناک‌تر است (اجتناب از درد، توهم برابری ایجاد می‌کند)."
               details={{
-                "first name": "Alec M. Thompson",
-                mobile: "(44) 123 1234 123",
-                email: "alecthompson@mail.com",
-                location: "USA",
-                social: (
+                "نام و نام خانوادگی": "الک ام. تامپسون",
+                "شماره موبایل": "(44) 123 1234 123",
+                "ایمیل": "alecthompson@mail.com",
+                "موقعیت مکانی": "ایالات متحده آمریکا",
+                "شبکه‌های اجتماعی": (
                   <div className="flex items-center gap-4">
                     <i className="fa-brands fa-facebook text-blue-700" />
                     <i className="fa-brands fa-twitter text-blue-400" />
@@ -117,14 +118,14 @@ export function Profile() {
                 ),
               }}
               action={
-                <Tooltip content="Edit Profile">
+                <Tooltip content="ویرایش پروفایل">
                   <PencilIcon className="h-4 w-4 cursor-pointer text-blue-gray-500" />
                 </Tooltip>
               }
             />
             <div>
               <Typography variant="h6" color="blue-gray" className="mb-3">
-                Platform Settings
+                خلاصه پیام ها
               </Typography>
               <ul className="flex flex-col gap-6">
                 {conversationsData.map((props) => (
@@ -132,8 +133,8 @@ export function Profile() {
                     key={props.name}
                     {...props}
                     action={
-                      <Button variant="text" size="sm">
-                        reply
+                      <Button variant="ghost" size="sm" className="shabnam ">
+                        پاسخ
                       </Button>
                     }
                   />
@@ -142,14 +143,14 @@ export function Profile() {
             </div>
           </div>
           <div className="px-4 pb-4">
-            <Typography variant="h6" color="blue-gray" className="mb-2">
-              Projects
+            <Typography variant="h6" color="blue-gray" className="mb-2 shabnam">
+              پروژه ها
             </Typography>
             <Typography
               variant="small"
-              className="font-normal text-blue-gray-500"
+              className="font-normal text-blue-gray-500 shabnam"
             >
-              Architects design houses
+              طراحی و معماری مدرن
             </Typography>
             <div className="mt-6 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4">
               {projectsData.map(
@@ -158,39 +159,39 @@ export function Profile() {
                     <CardHeader
                       floated={false}
                       color="gray"
-                      className="mx-0 mt-0 mb-4 h-64 xl:h-40"
+                      className="mx-0 mt-0 mb-4 h-64 xl:h-40 shabnam"
                     >
                       <img
                         src={img}
                         alt={title}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-cover shabnam"
                       />
                     </CardHeader>
                     <CardBody className="py-0 px-1">
                       <Typography
                         variant="small"
-                        className="font-normal text-blue-gray-500"
+                        className="font-normal text-blue-gray-500 shabnam"
                       >
                         {tag}
                       </Typography>
                       <Typography
                         variant="h5"
                         color="blue-gray"
-                        className="mt-1 mb-2"
+                        className="mt-1 mb-2 shabnam"
                       >
                         {title}
                       </Typography>
                       <Typography
                         variant="small"
-                        className="font-normal text-blue-gray-500"
+                        className="font-normal text-blue-gray-500 shabnam"
                       >
                         {description}
                       </Typography>
                     </CardBody>
                     <CardFooter className="mt-6 flex items-center justify-between py-0 px-1">
                       <Link to={route}>
-                        <Button variant="outlined" size="sm">
-                          view project
+                        <Button variant="outlined" size="sm" className="shabnam">
+                          نمایش
                         </Button>
                       </Link>
                       <div>
@@ -201,9 +202,8 @@ export function Profile() {
                               alt={name}
                               size="xs"
                               variant="circular"
-                              className={`cursor-pointer border-2 border-white ${
-                                key === 0 ? "" : "-ml-2.5"
-                              }`}
+                              className={`cursor-pointer border-2 border-white ${key === 0 ? "" : "-ml-2.5"
+                                }`}
                             />
                           </Tooltip>
                         ))}

@@ -13,9 +13,9 @@ export function ProfileInfoCard({ title, description, details, action }) {
         color="transparent"
         shadow={false}
         floated={false}
-        className="mx-0 mt-0 mb-4 flex items-center justify-between gap-4"
+        className="mx-0 mt-0 mb-4 flex items-center justify-between gap-4 shabnam"
       >
-        <Typography variant="h6" color="blue-gray">
+        <Typography variant="h6" color="blue-gray shabnam">
           {title}
         </Typography>
         {action}
@@ -24,7 +24,7 @@ export function ProfileInfoCard({ title, description, details, action }) {
         {description && (
           <Typography
             variant="small"
-            className="font-normal text-blue-gray-500"
+            className="font-normal text-blue-gray-500 shabnam"
           >
             {description}
           </Typography>
@@ -39,14 +39,14 @@ export function ProfileInfoCard({ title, description, details, action }) {
                 <Typography
                   variant="small"
                   color="blue-gray"
-                  className="font-semibold capitalize"
+                  className="font-semibold capitalize shabnam"
                 >
                   {el}:
                 </Typography>
                 {typeof details[el] === "string" ? (
                   <Typography
                     variant="small"
-                    className="font-normal text-blue-gray-500"
+                    className="font-normal text-blue-gray-500 shabnam"
                   >
                     {details[el]}
                   </Typography>
