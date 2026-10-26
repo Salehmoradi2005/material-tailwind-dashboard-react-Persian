@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shabnam Thin */
+@font-face {
+  font-family: "Shabnam";
+  src: url("./Shabnam-Thin-FD.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Shabnam Light */
+@font-face {
+  font-family: "Shabnam";
+  src: url("./Shabnam-Light-FD.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Shabnam Regular */
+@font-face {
+  font-family: "Shabnam";
+  src: url("./Shabnam-FD.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Shabnam Medium */
+@font-face {
+  font-family: "Shabnam";
+  src: url("./Shabnam-Medium-FD.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Shabnam Bold */
+@font-face {
+  font-family: "Shabnam";
+  src: url("./Shabnam-Bold-FD.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply globally */
+body {
+  font-family: "Shabnam", sans-serif;
+}
+* {
+  font-family: "Shabnam", sans-serif;
+}
+
+.shabnam {
+  font-family: "Shabnam", sans-serif;
+}
